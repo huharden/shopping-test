@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: index
+  profiles:
+    active: dev
+
+eureka:
+  instance:
+    hostname: shopping-index
+    # 实例使用ip进行访问
+    prefer-ip-address: true
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@localhost:8888/eureka
