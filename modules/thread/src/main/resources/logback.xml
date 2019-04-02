@@ -65,8 +65,8 @@
     <!--自定义需要输出的最低日志等级-->
     <root level="INFO">
         <appender-ref ref="FILE"/>
-        <!--<appender-ref ref="ERROR_FILE"/>
-        <appender-ref ref="STDOUT"/>-->
+        <appender-ref ref="ERROR_FILE"/>
+        <appender-ref ref="STDOUT"/>
     </root>
 
 </configuration>
