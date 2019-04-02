@@ -16,7 +16,7 @@ security:
 eureka:
   server:
     # 关闭保护机制，确保注册中心可以将不可用的实例正确删除
-    enable-self-preservation: true
+    enable-self-preservation: false
     # 清理无效节点间隔时间 默认 60*1000
     eviction-interval-timer-in-ms: 5000
   instance:

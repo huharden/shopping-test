@@ -8,19 +8,11 @@ server:
   port: 8008
 
 zuul:
+  sensitiveHeaders: x-access-token,token
   routes:
-    api-index:
-      path: /api/index/**
-      serviceId: index
-    api-comment:
-      path: /api/comment/**
-      serviceId: comment
-    api-user:
-      path: /api/user/**
-      serviceId: user
-    api-article:
-      path: /api/article/**
-      serviceId: article
+    api-redis:
+      path: /api/redis/**
+      serviceId: shopping-redis
   host:
     connect-timeout-millis: 60000
     socket-timeout-millis: 60000

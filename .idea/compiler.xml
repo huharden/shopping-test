@@ -11,6 +11,7 @@
         <module name="eureka" />
         <module name="gateway" />
         <module name="index" />
+        <module name="redis" />
         <module name="thread" />
       </profile>
     </annotationProcessing>
