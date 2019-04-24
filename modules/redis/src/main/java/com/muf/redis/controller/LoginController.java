@@ -19,11 +19,16 @@ public class LoginController {
 
     @GetMapping("/hashSet")
     public void login(){
-        Jedis jedis = new Jedis("123.207.27.144",6379);
+        /*Jedis jedis = new Jedis("123.207.27.144",6379);
         for(int i=0;i<100;i++){
-            jedis.hset("key"+i,"keyvalue:"+i,"keyfield"+i);
-            //redisUtils.cleanKey("key"+i);
-        }
+            // 此句就是使用 pipelined 方法，激活pipeline
+            Pipeline  pipeline = jedis.pipelined();
+            for(int j=i*100;j<(i+1)*100;j++){
+                pipeline.hset("key"+j,"keyfield"+j,"keyvalue"+j);
+            }
+            //结束的时候必须要加的
+            pipeline.syncAndReturnAll();
+        }*/
     }
 
     @GetMapping("/pipeLine")
