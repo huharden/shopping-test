@@ -15,6 +15,7 @@
         <module>index</module>
         <module>thread</module>
         <module>redis</module>
+        <module>testCode</module>
     </modules>
     <dependencies>
         <!--熔断器相关依赖 starting-->
@@ -33,6 +34,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.muf.shopping</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
         <!--ending-->
     </dependencies>
